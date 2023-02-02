@@ -21,3 +21,13 @@ document.addEventListener("DOMContentLoaded", function() {
     loader = document.getElementById('loader');
     loadNow(2);
 });
+
+//NO TOCAR ESTAS FUNCIONES DE JAVASCRIPT. SON DEL HEADER DESPLEGABLE.
+function openHead() {
+    document.getElementById("globalheader").style.height = "150px";
+}
+
+
+function closeHead() {
+    document.getElementById("globalheader").style.height = "0px";
+}
