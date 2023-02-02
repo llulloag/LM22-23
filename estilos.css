@@ -1,6 +1,6 @@
 /* 
-* Version 0.2
-* Last update: 2023/01/26
+* Version 0.3
+* Last update: 2023/02/02
 * Author: 1ºASIX Simarro
 * Contact: 
 */
@@ -27,7 +27,7 @@ body {
     margin-top: -5rem;
     margin-left: -0.6rem;
     width: 84.31rem;
-    height: 40.5rem;
+    height: 41rem;
     z-index: 999;
     overflow: visible;
     background: rgb(70, 68, 73) url('./Multimedia/preloader.gif') no-repeat center center;
@@ -40,11 +40,102 @@ body {
     margin: 0px auto;
 }
 
-/**Fondo que se usa para la cabecera**/
+/**Estilo de todo el contenido del header desplegable (¡NO ALTERAR!) [Consultar con Sergi]**/
+#globalheader{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 0px;
+    top: 0;
+    z-index: 998;
+    margin-left: -6.5vh;
+    overflow: hidden;
+    transition: 0.6s;
+    background: url(../Multimedia/bg-menu.jpg) 0 0 repeat #fff;
+  }
+  
+  #OpenHeader{
+    top: 0;
+    right: 4vh;
+    position: fixed;
+  }
+  
+  #contentsheader {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    width: 1000px;
+    height: 100%;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu-header{
+    list-style: none;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+  
+  }
+  
+  .menu-header li {
+    list-style: none;
+    float: left;
+    margin: 0 auto;
+    padding: 0 20px;
+    border-right: 1px solid #cccccc;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+  }
+  
+  .menu-header li a {
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: middle;
+    background: transparent;
+  }
+  
+  .menu-header li a img{
+    border: 0px;
+    text-decoration: none;
+    vertical-align: top;
+    font-size: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    background: transparent;
+    text-align: center;
+    float: right;
+    font: 13px/1.4 "Prata";
+  }
+  
+  .bt-close {
+    height: 40px;
+    width: 50px;
+    top: 55px;  
+    right: 75px;
+    z-index: 9999;
+    display: block;
+    position: absolute;
+    border: none;
+    font-size: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    background: transparent;
+  }
+/**Fin del estilo del header**/
 
-#Cabecera {
-    background: url(********);
-}
 
 /**Modificacion de tamaño y forma y espaciado de la cabecera**/
 
